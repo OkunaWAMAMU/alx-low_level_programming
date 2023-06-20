@@ -20,8 +20,6 @@ sizeof(c));
 printf("Size of a long long int: %lu byte(s)\n", (unsigned long)
 sizeof(d));
 printf("Size of a float: %lu byte(s)\n", (unsigned long)
-sizeof(f));
-printf("Size of a double: %zu byte(s)\n",(unsigned long) sizeof(double));
-    printf("Size of a long double: %zu byte(s)\n", (unsigned long) sizeof(long double));
+sizeof(f))
 return (0);
 }
