@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - main code
- *int - type
+ *@c - a return type
  * Return: 0 (success)
  */
 int _islower(int c)
