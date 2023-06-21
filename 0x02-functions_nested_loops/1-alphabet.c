@@ -10,6 +10,6 @@ char vin;
 for (vin = 'a'; vin <= 'z'; vin++)
 {
 _putchar(vin);
-_putchar('\n');
 }
+_putchar('\n');
 }
