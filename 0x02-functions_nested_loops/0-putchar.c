@@ -6,9 +6,8 @@
  *
  */
 int _putchar(void)
-
 {
-char* name = "_putchar";
-putchar(name);
+const char mystring [20] = "_putchar";
+putchar(mystring);
 return (0);
 }
