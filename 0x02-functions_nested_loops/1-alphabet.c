@@ -4,13 +4,13 @@
  * 
  * return: 0 (success)
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 char vin;
-if(vin >='a'; vin <= 'z'; vin++)
+for(vin ='a'; vin <= 'z'; vin++)
 {
 _putchar(vin);
-_putchar(\n);
+_putchar('\n');
 }
-return ();
+
 }
