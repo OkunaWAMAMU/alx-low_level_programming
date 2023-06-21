@@ -1,15 +1,16 @@
-#include <main.h>
+#include "main.h"
 /**
- * a program that prints alphabets
+ *main -  a program that prints alphabets
  * 
- * return 0 (success)
+ * return: 0 (success)
  */
 void print_alphabet(void);
 {
-char vin = 'a';
-if(vin >='a' && vin <= 'z')
+char vin;
+if(vin >='a'; vin <= 'z'; vin++)
 {
-	putchar("'a' ");
+_putchar(vin);
+_putchar(\n);
 }
 return ();
 }
