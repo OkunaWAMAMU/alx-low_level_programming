@@ -14,7 +14,7 @@ void print_line(int n)
 		_putchar('\n');
 	}
 
-	else
+	elsg
 	{
 		for (k = 1; k <= n; k++)
 	{
