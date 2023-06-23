@@ -3,6 +3,7 @@
  * mul - function that multiplies two numbers
  * @a: number to be multiplied
  * @b: number to be multiplied
+ * mul: variable that stores the product
  * Return : the product of a and b
  */
 
