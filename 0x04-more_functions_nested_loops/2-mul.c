@@ -3,10 +3,13 @@
  * mul - function that multiplies two numbers
  * @a: number to be multiplied
  * @b: number to be multiplied
- * return : the value of the multiplied numbers
- **/
+ * Return : the return value is 0
+ */
 
 int mul(int a, int b)
 {
-	return (a * b);
+	int mul;
+
+	mul = a * b;
+	return (mul);
 }
