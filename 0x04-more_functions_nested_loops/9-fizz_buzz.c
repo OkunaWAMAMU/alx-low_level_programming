@@ -23,9 +23,13 @@ int main(void)
 		{
 			printf(" FizzBuzz");
 		}
+		else if (k == 1)
+		{
+			printf("%d", k);
+		}
 		else
 		{
-			printf(" %d ", k);
+			printf(" %d", k);
 		}
 	}
 	printf("\n");
