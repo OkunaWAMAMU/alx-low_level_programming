@@ -9,48 +9,27 @@
  */
 void print_number(int n)
 {
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
+	int power = 1;
+	int temp = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
+		temp = n;
 	}
 
-	int numDigits;
-	int temp;
-
-	numDigits = 0
-	temp = n;
-	while (temp != 0)
+	while (temp >= 10)
 	{
-		numDigits++;
+		power *= 10;
 		temp /= 10;
 	}
 
-	int divisor;
-
-	divisor = 1;
-
-	while (numDigits > 1)
+	while (power > 0)
 	{
-		divisor *= 10;
-		numDigits--;
-	}
-
-	while (divisor != 0)
-	{
-		int digit;
-
-		digit = n / divisor;
-
-		_putchar(digit + '0');
-		n %= divisor;
-		divisor /= 10;
+		_putchar((n / power) + '0');
+		n %= power;
+		power /= 10;
 	}
 }
 
