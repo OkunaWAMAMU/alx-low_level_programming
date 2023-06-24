@@ -9,7 +9,7 @@
 long largest_prime_factor(long num)
 {
 	long largest_factor = -1;
-	long i;
+	long j;
 
 	if (num <= 1)
 		return (-1);
@@ -20,12 +20,12 @@ long largest_prime_factor(long num)
 		num /= 2;
 	}
 
-	for (i = 3; i <= sqrt(num); i += 2)
+	for (j = 3; j <= sqrt(num); j += 2)
 	{
-		while (num % i == 0)
+		while (num % j == 0)
 		{
-			largest_factor = i;
-			num /= i;
+			largest_factor = j;
+			num /= j;
 		}
 	}
 
