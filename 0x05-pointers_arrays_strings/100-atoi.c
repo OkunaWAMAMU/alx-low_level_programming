@@ -1,56 +1,37 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _atoi - Converts a string to an integer.
- * @s: The string to be converted.
+ * _atoi - function that Converts a string to an integer.
+ * @s: this is the string to be converted.
  *
- * Return: The converted integer value.
- *
- * Description: The function considers the sign and converts
- *              the numeric part of the string to an integer.
- *              If there are no numbers in the string, it returns 0.
- *              The function does not use long, does not declare
- *              new variables of "type" array, and avoids
- *              hard-coding special values.
- *              The code is compiled with the
- *              -fsanitize=signed-integer-overflow gcc flag.
+ * Return: return value is  The converted integer.
  */
 int _atoi(char *s)
 {
-    int sign = 1;
-    int result = 0;
-    int i = 0;
+	int sign = 1;
+	int result = 0;
+	int i = 0;
 
-    if (s != NULL)
-    {
-        while (s[i] == ' ' || (s[i] >= '\t' && s[i] <= '\r'))
-            i++;
+	while (s[i] != '\0')
+	{
+		if (s[i] == '-')
+			sign = -sign;
 
-        if (s[i] == '-')
-        {
-            sign = -1;
-            i++;
-        }
-        else if (s[i] == '+')
-        {
-            i++;
-        }
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			if (result > 0)
+				result = result * 10 + (s[i] - '0');
+			else
+				result = sign * (s[i] - '0');
+		}
+		else if (result != 0)
+		{
+			break;
+		}
 
-        while (s[i] >= '0' && s[i] <= '9')
-        {
-            if (result > (result * 10 + (s[i] - '0')))
-            {
-                if (sign == 1)
-                    return -1;
-                else
-                    return 0;
-            }
+		i++;
+	}
 
-            result = result * 10 + (s[i] - '0');
-            i++;
-        }
-    }
-
-    return result * sign;
+	return (result);
 }
 
