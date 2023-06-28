@@ -12,10 +12,11 @@ int main(void)
 {
 	int count = 50;
 	unsigned long fib1 = 1, fib2 = 2, fib;
+	int i;
 
 	printf("%lu, %lu", fib1, fib2);
 
-	for (int i = 3; i <= count; i++)
+	for (i = 3; i <= count; i++)
 	{
 	fib = fib1 + fib2;
 	printf(", %lu", fib);
