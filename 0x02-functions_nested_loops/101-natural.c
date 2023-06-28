@@ -13,13 +13,13 @@ int main(void)
 
 	for (index = 0; index < limit; index++)
 	{
-	if (index % 3 == 0 || index % 5 == 0)
+	if ((index % 3) == 0 || (index % 5) == 0)
 	{
 		sum += index;
 	}
 	}
 
-	printf("The sum of multiples of 3 or 5 below %d is: %d\n", limit, sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
