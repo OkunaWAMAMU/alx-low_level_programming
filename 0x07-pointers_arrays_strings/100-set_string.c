@@ -2,11 +2,9 @@
 
 /**
  * set_string - Sets the value of a pointer to a char.
- * @s: Pointer to a pointer to a char.
- * @to: Pointer to a char.
- *
- * Description: This function sets the value of the pointer @s to the value
- *              of the pointer @to.
+ * @s: this is a pointer to a pointer to a char.
+ * @to: this is a Pointer to a char.
+ * return: return value is void
  */
 void set_string(char **s, char *to)
 {
