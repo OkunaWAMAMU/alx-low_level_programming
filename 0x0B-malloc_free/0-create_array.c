@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
- /**
-  *create_array - creates an array of chars
-  *
-  *  @size: The size of an unsigned int
-  *  @c: The char to fill in the array
-  *
-  *  Return always 0 (success).
-  */
+
+/**
+ * create_array - creates an array of chars
+ * @size: The size of an int
+ * @c: The char to fill the array
+ *
+ * Return: The array filled
+ */
 char *create_array(unsigned int size, char c)
 {
 	unsigned int z;
