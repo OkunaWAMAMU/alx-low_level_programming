@@ -1,14 +1,19 @@
 #include "main.h"
-void _puts(char *str)
-#include<stdio.h>
 /**
- * main -forms the  Entry point
- *
- * Return: Always 0 (Success)
+ * _puts - output a string
+ * @c: pointer parameter a
+ * Description: length  pointer value
+ * Return: integer
  */
-int main(void)
-{
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
-}
 
+void _puts(char *c)
+{
+
+	int i = 0;
+
+for (; c[i] != '\0'; i++)
+{
+_putchar(c[i]);
+}
+_putchar('\n');
+}
