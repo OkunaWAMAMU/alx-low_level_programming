@@ -3,15 +3,16 @@
 
 /**
  * factorial - find and  returns the factorial of a given number.
- * n - numbers whose factorial is returned
+ * @n: numbers whose factorial is returned
  *
- * return: Always 0.
+ * Return: The factorial of n.
  */
 
 int factorial(int n)
 {
-
-if (n <= 1)
+if (n < 0)
+	return (-1);
+if (n == 1)
 
 return (1);
 
