@@ -30,7 +30,9 @@ list_t *add_node(list_t **head, const char *str)
 	while (str[new_node->len] != '\0')
 	{
 		new_node->len++;
+	}
 		new_node->next = *head;
 		*head = new_node;
+		
 		return (new_node);
 	}
