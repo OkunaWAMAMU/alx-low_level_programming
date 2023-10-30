@@ -1,8 +1,4 @@
-#include <fcntl.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
-
+#include "main.h"
 /**
  * create_file - Create a file and write text content to it.
  * @filename: The name of the file to be created or truncated.
