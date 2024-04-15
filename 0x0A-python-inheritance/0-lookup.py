@@ -1,17 +1,14 @@
 def lookup(obj):
-    """Returns a list of available attributes and methods of an object.
+    return dir(obj)
 
-    Args:
-        obj: The object to inspect.
+class MyClass1(object):
+    pass
 
-    Returns:
-        list: A list containing the names of available attributes and methods.
-    """
-    attributes = []
-    for attr in dir(obj):
-        try:
-            getattr(obj, attr)
-            attributes.append(attr)
-        except AttributeError:
-            continue
-    return attributes
+class MyClass2(object):
+    my_attr1 = 3
+    def my_meth(self):
+        pass
+
+print(lookup(MyClass1))
+print(lookup(MyClass2))
+print(lookup(int))
