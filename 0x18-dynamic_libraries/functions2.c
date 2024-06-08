@@ -1,4 +1,6 @@
 #include "main.h"
+#include <unistd.h>  // Include this for the write function
+#include <string.h>  // Include this if you are using _strlen
 /**
  * _isdigit - Checks if a character is a digit (0 through 9).
  * @c: The character to check.
